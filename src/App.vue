@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Header />
+    <RelatedPrductsVue />
     <Chat />
     <v-main>
       <router-view />
@@ -11,10 +12,12 @@
 <script>
 import Header from "../src/components/Header.vue";
 import Chat from "../src/components/Chat.vue";
+import RelatedPrductsVue from "./components/RelatedPrducts.vue";
 export default {
   name: "App",
   components: {
     Header,
+    RelatedPrductsVue,
     Chat,
   },
 };
@@ -32,7 +35,7 @@ export default {
   box-sizing: border-box;
   font-family: nova;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 
 #app {
