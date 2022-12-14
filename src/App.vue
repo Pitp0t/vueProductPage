@@ -1,8 +1,10 @@
 <template>
   <v-app>
     <Header />
+    <ProductInfo />
     <RelatedPrductsVue />
     <Chat />
+    <Footer />
     <v-main>
       <router-view />
     </v-main>
@@ -11,14 +13,19 @@
 
 <script>
 import Header from "../src/components/Header.vue";
-import Chat from "../src/components/Chat.vue";
+import ProductInfo from "../src/components/ProductInfo.vue";
 import RelatedPrductsVue from "./components/RelatedPrducts.vue";
+import Footer from "./components/Footer.vue";
+import Chat from "../src/components/Chat.vue";
+
 export default {
   name: "App",
   components: {
     Header,
     RelatedPrductsVue,
     Chat,
+    Footer,
+    ProductInfo,
   },
 };
 </script>
@@ -39,6 +46,6 @@ export default {
 }
 
 #app {
-  height: 200vh;
+  background-color: #e4e4e4;
 }
 </style>

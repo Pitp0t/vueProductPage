@@ -16,38 +16,51 @@ export default {
         </svg>
       </div>
     </div>
-    <div>
-      <h2></h2>
+    <div class="product_content">
+      <h2 class="product_oldPrice">$79.891</h2>
       <div class="product_info">
-        <h2>$ 47.935</h2>
-        <h2>40% OFF</h2>
+        <div class="product_price">
+          <span class="price">$47.935</span>
+          <span class="offer">40% OFF</span>
+        </div>
+
+        <h3 class="product_cuotas">hasta 18 cuotas</h3>
       </div>
       <h2>Griferia Monocomando Cocina Tactil Fv Libby 411.04/39E</h2>
     </div>
-    <button class="cartButton">
-      <svg class="cartSvg" height="20" width="20">
-        <path
-          d="M9.104 7.542v-2.48H6.625v-1.75h2.479V.833h1.75v2.479h2.479v1.75h-2.479v2.48ZM5.833 18.333q-.708 0-1.208-.5t-.5-1.208q0-.708.5-1.208t1.208-.5q.709 0 1.209.5.5.5.5 1.208t-.5 1.208q-.5.5-1.209.5Zm8.313 0q-.708 0-1.208-.5t-.5-1.208q0-.708.5-1.208t1.208-.5q.708 0 1.208.5t.5 1.208q0 .708-.5 1.208t-1.208.5Zm-8.334-4.125q-.937 0-1.447-.843-.511-.844-.032-1.677l1.084-2-2.959-6.271H.792v-1.75h2.77l3.563 7.479h5.792l3.187-5.834 1.542.876L14.438 10q-.23.417-.626.656-.395.24-.874.24H6.771l-.875 1.562h9.958v1.75Z"
-        />
-      </svg>
-      <h3>Comprar</h3>
-    </button>
+    <div class="mobile">
+      <button class="cartButton">
+        <svg class="cartSvg" height="20" width="20">
+          <path
+            d="M9.104 7.542v-2.48H6.625v-1.75h2.479V.833h1.75v2.479h2.479v1.75h-2.479v2.48ZM5.833 18.333q-.708 0-1.208-.5t-.5-1.208q0-.708.5-1.208t1.208-.5q.709 0 1.209.5.5.5.5 1.208t-.5 1.208q-.5.5-1.209.5Zm8.313 0q-.708 0-1.208-.5t-.5-1.208q0-.708.5-1.208t1.208-.5q.708 0 1.208.5t.5 1.208q0 .708-.5 1.208t-1.208.5Zm-8.334-4.125q-.937 0-1.447-.843-.511-.844-.032-1.677l1.084-2-2.959-6.271H.792v-1.75h2.77l3.563 7.479h5.792l3.187-5.834 1.542.876L14.438 10q-.23.417-.626.656-.395.24-.874.24H6.771l-.875 1.562h9.958v1.75Z"
+          />
+        </svg>
+        <h3>Comprar</h3>
+      </button>
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .product {
+  position: relative;
   cursor: pointer;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 1em;
-  gap: 1rem;
+  gap: 1.5rem;
   background-color: white;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%), 0 -1px 2px 0 rgb(0 0 0 / 10%);
   border-radius: 0.2rem;
   .product_top {
-    position: relative;
     border-bottom: 1px solid rgb(242, 242, 242);
+    .product_img {
+      aspect-ratio: 1;
+      width: 100%;
+      object-fit: contain;
+    }
     .product_favIcon {
       display: flex;
       justify-content: center;
@@ -57,20 +70,61 @@ export default {
       background-color: #f2f2f2;
       border-radius: 50%;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 5px;
+      right: 5px;
+    }
+  }
+  .product_content {
+    padding: 0 1em;
+  }
+
+  .product_oldPrice {
+    text-decoration: line-through;
+  }
+  .product_cuotas {
+    color: #007ac1;
+  }
+
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .product_price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .price {
+        font-size: 1.5rem;
+      }
+      .offer {
+        color: #35a3a8;
+      }
     }
   }
 
-  &:hover {
-    transition: box-shadow 0.5s;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.063), 0 -1px 2px 0 rgba(0, 0, 0, 0.085);
+  .cartButton {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 0.5em 3em;
+    border-radius: 1rem;
+    &:hover {
+      background-color: #007ac1;
+      color: white;
+      .cartSvg {
+        fill: "white";
+      }
+    }
+    &:hover {
+      transition: box-shadow 0.5s;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.063), 0 -1px 2px 0 rgba(0, 0, 0, 0.085);
+    }
   }
 }
-w .cartButton {
-  display: flex;
-  background-color: #f2f2f2;
-  padding: 0.5em 3em;
-  border-radius: 1rem;
+
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: none;
+  }
 }
 </style>

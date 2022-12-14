@@ -4,7 +4,7 @@ export default {
 };
 </script>
 
-<template>
+<template class="HeaderContainer">
   <header class="header" fixed top>
     <nav class="navBar">
       <img alt="Logo" class="" src="../assets/logoFoschia.jpg" height="78" /><img />
@@ -99,9 +99,14 @@ export default {
 
 <style scoped lang="scss">
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   color: white;
   height: 78px;
   background-color: #007ac1;
+
   .navBar {
     display: flex;
     justify-content: space-between;
