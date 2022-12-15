@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="productInfo_container d-flex flex-column flex-md-row justify-center">
-    <div class="d-flex flex-column">
+    <div class="galery d-flex flex-column">
       <div class="d-flex galery d-flex flex-column flex-md-row justify-center">
         <div class="galery__side d-flex flex-row flex-md-column">
           <img class="galery__side_img" src="../assets/foto2.webp" alt="" />
@@ -16,61 +16,77 @@ export default {
         </div>
         <img class="galery_side_principal" src="../assets/foto2.webp" alt="" />
       </div>
-      <div class="moreInfo">
-        <h2 class="subtitle mb-6">Características</h2>
-        <div class="d-flex flex-row flex-md-column">
-          <div class="d-flex justify-space-between flex-column flex-md-row mb-6">
-            <div>
-              <h3>TIPO DE LIMPIEZA</h3>
-              <h4>No utilizar abrasivos</h4>
+      <div class="d-none d-md-flex flex-column">
+        <div class="moreInfo">
+          <h2 class="subtitle mb-6">Características</h2>
+          <div class="d-flex flex-row flex-md-column mr-6">
+            <div class="d-flex justify-space-between flex-column flex-md-row mb-6">
+              <div>
+                <h3>TIPO DE LIMPIEZA</h3>
+                <h4>No utilizar abrasivos</h4>
+              </div>
+              <div>
+                <h3>GARANTÍA</h3>
+                <h4>5 años</h4>
+              </div>
+              <div>
+                <h3>MARCA</h3>
+                <h4>Ultragrif</h4>
+              </div>
+              <div>
+                <h3>LÍNEA</h3>
+                <h4>Jack</h4>
+              </div>
             </div>
-            <div>
-              <h3>GARANTÍA</h3>
-              <h4>5 años</h4>
-            </div>
-            <div>
-              <h3>MARCA</h3>
-              <h4>Ultragrif</h4>
-            </div>
-            <div>
-              <h3>LÍNEA</h3>
-              <h4>Jack</h4>
-            </div>
-          </div>
 
-          <div class="d-flex justify-space-between flex-column flex-md-row">
-            <div>
-              <h3>CON SALIDA</h3>
-              <h4>De mesada</h4>
-            </div>
-            <div>
-              <h3>CUADRO DE DUCHA</h3>
-              <h4>Monocomando</h4>
-            </div>
-            <div>
-              <h3>TIPO DE INSTALACIÓN</h3>
-              <h4>Movil</h4>
-            </div>
-            <div>
-              <h3>IMPERMEABLE</h3>
-              <h4>Argentina</h4>
+            <div class="d-flex justify-space-between flex-column flex-md-row">
+              <div>
+                <h3>TIPO DE LIMPIEZA</h3>
+                <h4>No utilizar abrasivos</h4>
+              </div>
+              <div>
+                <h3>GARANTÍA</h3>
+                <h4>5 años</h4>
+              </div>
+              <div>
+                <h3>MARCA</h3>
+                <h4>Ultragrif</h4>
+              </div>
+              <div>
+                <h3>LÍNEA</h3>
+                <h4>Jack</h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="moreInfo">
-        <h2 class="subtitle mb-6">Más información</h2>
-        <div class="mb-6">
-          <h3>DESCRIPCIÓN MARCA</h3>
-          <h4>ULTRAGRIF es una empresa Argentina con amplia experiencia y trayectoria. dedicada a la comercialización de griferías.</h4>
-        </div>
-        <div>
-          <h3>TIPO DE PINTURA</h3>
-          <h4>Apto para calefon y/o termotanque</h4>
+        <div class="moreInfo">
+          <h2 class="subtitle mb-6">Más información</h2>
+          <div class="mb-6">
+            <h3>DESCRIPCIÓN MARCA</h3>
+            <h4>ULTRAGRIF es una empresa Argentina con amplia experiencia y trayectoria. dedicada a la comercialización de griferías.</h4>
+          </div>
+          <div>
+            <h3>TIPO DE PINTURA</h3>
+            <h4>Apto para calefon y/o termotanque</h4>
+          </div>
         </div>
       </div>
     </div>
     <div class="sideInfo">
+      <div class="favIcon">
+        <svg height="24" width="24">
+          <path
+            d="m12 19.65-.75-.675q-2.45-2.25-4.05-3.838-1.6-1.587-2.537-2.8-.938-1.212-1.301-2.2Q3 9.15 3 8.15q0-1.9 1.3-3.2 1.3-1.3 3.2-1.3 1.325 0 2.475.675Q11.125 5 12 6.3q.875-1.3 2.025-1.975T16.5 3.65q1.9 0 3.2 1.3 1.3 1.3 1.3 3.2 0 1-.362 1.987-.363.988-1.3 2.2-.938 1.213-2.526 2.8-1.587 1.588-4.062 3.838Zm0-1.35q2.4-2.175 3.95-3.725 1.55-1.55 2.45-2.688.9-1.137 1.25-2.012T20 8.15q0-1.5-1-2.5t-2.5-1q-1.2 0-2.212.687-1.013.688-1.788 2.038h-1Q10.7 6 9.7 5.325q-1-.675-2.2-.675-1.475 0-2.487 1Q4 6.65 4 8.15q0 .85.35 1.725.35.875 1.25 2.012.9 1.138 2.45 2.675Q9.6 16.1 12 18.3Zm0-6.825Z"
+          />
+        </svg>
+      </div>
+      <div class="shareIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+          <path
+            d="M18 21.5q-1.05 0-1.775-.725Q15.5 20.05 15.5 19q0-.2.038-.413.037-.212.112-.412l-7.75-4.55q-.375.4-.862.637Q6.55 14.5 6 14.5q-1.05 0-1.775-.725Q3.5 13.05 3.5 12q0-1.05.725-1.775Q4.95 9.5 6 9.5q.55 0 1.038.238.487.237.862.637l7.75-4.55q-.075-.2-.112-.413Q15.5 5.2 15.5 5q0-1.05.725-1.775Q16.95 2.5 18 2.5q1.05 0 1.775.725Q20.5 3.95 20.5 5q0 1.05-.725 1.775Q19.05 7.5 18 7.5q-.55 0-1.038-.238-.487-.237-.862-.637l-7.75 4.55q.075.2.113.412.037.213.037.413 0 .2-.037.412-.038.213-.113.413l7.75 4.55q.375-.4.862-.637Q17.45 16.5 18 16.5q1.05 0 1.775.725.725.725.725 1.775 0 1.05-.725 1.775-.725.725-1.775.725Zm0-15q.625 0 1.062-.438Q19.5 5.625 19.5 5t-.438-1.062Q18.625 3.5 18 3.5t-1.062.438Q16.5 4.375 16.5 5t.438 1.062Q17.375 6.5 18 6.5Zm-12 7q.625 0 1.062-.438Q7.5 12.625 7.5 12t-.438-1.062Q6.625 10.5 6 10.5t-1.062.438Q4.5 11.375 4.5 12t.438 1.062Q5.375 13.5 6 13.5Zm12 7q.625 0 1.062-.438.438-.437.438-1.062t-.438-1.062Q18.625 17.5 18 17.5t-1.062.438Q16.5 18.375 16.5 19t.438 1.062q.437.438 1.062.438ZM18 5ZM6 12Zm12 7Z"
+          />
+        </svg>
+      </div>
       <div class="breadcrums">
         <a href="">Griferías</a>> <a href="">Griferías Para Cocina</a>>
         <a href=""> Monocomando</a>
@@ -106,6 +122,61 @@ export default {
           <h3>Comprar ahora</h3>
         </button>
       </div>
+      <div class="d-flex d-md-none flex-column">
+        <div class="moreInfo">
+          <h2 class="subtitle mb-6">Características</h2>
+          <div class="d-flex flex-row flex-md-column mr-6">
+            <div class="d-flex justify-space-between flex-column flex-md-row mb-6">
+              <div>
+                <h3>TIPO DE LIMPIEZA</h3>
+                <h4>No utilizar abrasivos</h4>
+              </div>
+              <div>
+                <h3>GARANTÍA</h3>
+                <h4>5 años</h4>
+              </div>
+              <div>
+                <h3>MARCA</h3>
+                <h4>Ultragrif</h4>
+              </div>
+              <div>
+                <h3>LÍNEA</h3>
+                <h4>Jack</h4>
+              </div>
+            </div>
+
+            <div class="d-flex justify-space-between flex-column flex-md-row">
+              <div>
+                <h3>TIPO DE LIMPIEZA</h3>
+                <h4>No utilizar abrasivos</h4>
+              </div>
+              <div>
+                <h3>GARANTÍA</h3>
+                <h4>5 años</h4>
+              </div>
+              <div>
+                <h3>MARCA</h3>
+                <h4>Ultragrif</h4>
+              </div>
+              <div>
+                <h3>LÍNEA</h3>
+                <h4>Jack</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moreInfo">
+          <h2 class="subtitle mb-6">Más información</h2>
+          <div class="mb-6">
+            <h3>DESCRIPCIÓN MARCA</h3>
+            <h4>ULTRAGRIF es una empresa Argentina con amplia experiencia y trayectoria. dedicada a la comercialización de griferías.</h4>
+          </div>
+          <div>
+            <h3>TIPO DE PINTURA</h3>
+            <h4>Apto para calefon y/o termotanque</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -118,31 +189,45 @@ export default {
   max-width: 1200px;
 }
 .sideInfo {
+  border-top: 1px solid #eee;
+  position: relative;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  min-width: 300px;
-  width: 400px;
   position: sticky;
   top: 78px;
   border-left: 1px solid #eee;
   padding: 2rem;
   gap: 1rem;
+  .favIcon {
+    padding: 0.5em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .shareIcon {
+    padding: 0.5em;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+  }
 }
 .galery {
-  height: 500px;
+  flex-basis: 120%;
   .galery_side_principal {
     border-left: 1px solid #eee;
     height: 500px;
-    aspect-ratio: 4/3;
     width: 100%;
     object-fit: contain;
   }
+
   .galery__side_img {
+    // max-width: 25%;
+    width: 125px;
+
     cursor: pointer;
     object-fit: contain;
     border-bottom: 1px solid #eee;
-    width: 125px;
     aspect-ratio: 1;
     &:hover {
       border-left: 3px solid #007ac1;
@@ -210,6 +295,7 @@ export default {
 }
 
 .moreInfo {
+  border-top: 1px solid #eee;
   padding: 2em;
 
   h3 {
@@ -237,6 +323,12 @@ export default {
   border-radius: 0.2em;
   h3 {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .galery__side_img {
+    max-width: 25%;
   }
 }
 </style>

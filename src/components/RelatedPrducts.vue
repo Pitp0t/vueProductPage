@@ -23,7 +23,6 @@ export default {
 <style scoped lang="scss">
 .relatedContainer {
   padding: 0;
-
   margin: 0;
   display: grid;
   place-content: center;
@@ -31,7 +30,7 @@ export default {
   grid-template-columns: repeat(4, minmax(250px, 1fr));
 }
 .relatedContent {
-  margin: 10em auto;
+  margin: 5em auto;
   max-width: 1200px;
 }
 .titleRelated {
