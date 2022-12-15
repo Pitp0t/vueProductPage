@@ -7,7 +7,6 @@ export default {
 <template>
   <footer class="footer">
     <v-container class="footer_container">
-      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
       <v-row>
         <v-col cols="12" md="4">
           <img src="../assets/logo-foschia-footer.webp" alt="" />
@@ -76,7 +75,7 @@ export default {
   </footer>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .v-application a {
   color: white;
 }

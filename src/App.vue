@@ -5,7 +5,6 @@
     <RelatedPrductsVue />
     <Chat />
     <Futer2 />
-    <!-- <Footer /> -->
     <v-main>
       <router-view />
     </v-main>
@@ -16,7 +15,6 @@
 import Header from "../src/components/Header.vue";
 import ProductInfo from "../src/components/ProductInfo.vue";
 import RelatedPrductsVue from "./components/RelatedPrducts.vue";
-import Footer from "./components/Footer.vue";
 import Futer2 from "../src/components/Futer2.vue";
 import Chat from "../src/components/Chat.vue";
 
@@ -26,7 +24,6 @@ export default {
     Header,
     RelatedPrductsVue,
     Chat,
-    Footer,
     ProductInfo,
     Futer2,
   },
